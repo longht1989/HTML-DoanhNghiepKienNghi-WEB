@@ -504,8 +504,11 @@
         font-size: 14px;
         font-size: 1.4rem;
         font-weight: bold;
-        color: #cc0000;
-        text-transform: uppercase;
+        .department {
+            color: #cc0000;
+            text-transform: uppercase;
+            margin-right: 3px;
+        }
     }
     .details-abody {
         font-size: 14px;
@@ -549,6 +552,21 @@
         float: right;
         width: 86%;
         text-align: right;
+    }
+    &__react-wrap {
+        text-align: right;
+        margin-top: 10px;
+    }
+    &__react {
+        display: inline-block;
+        margin-left: 10px;
+        text-align: center;
+        .vote-count {
+            margin-top: 5px;
+        }
+        .btn {
+            border-radius: 0;
+        }
     }
 }
 
@@ -682,9 +700,13 @@
         border: 1px solid #ddd;
     }
     .comment-wrap {
-        border-top: 1px solid #ddd;
+        border-top: none;
         margin-top: 15px;
         margin-bottom: 0;
+        .comment-heading {
+            padding: 0;
+            margin-bottom: 12px;
+        }
         .btn {
             width: initial;
         }
