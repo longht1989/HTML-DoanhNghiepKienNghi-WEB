@@ -714,10 +714,9 @@
 }
 
 
-/* --- */
+/* -Process box- */
 
 .process {
-    background: #fff;
     padding: 20px 18px 18px;
     background: #dff0d8;
     border: 1px solid #bbd9af;
@@ -745,6 +744,27 @@
         }
         time {
             font-weight: bold;
+        }
+    }
+}
+
+
+/*Pending box*/
+
+.pending {
+    padding: 16px;
+    background: #fff;
+    border: 1px solid #ddd;
+    -moz-box-shadow: 0 0 5px #ddd;
+    -webkit-box-shadow: 0 0 5px #ddd;
+    box-shadow: 0 0 5px #ddd;
+    &__title {
+        margin-bottom: 10px;
+    }
+    &__content {
+        p {
+            background: url(../images/bullet.png) 0 4px no-repeat;
+            padding: 0 0 5px 18px;
         }
     }
 }
